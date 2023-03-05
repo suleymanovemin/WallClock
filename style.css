@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #000;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  height: 600px;
+  border-radius: 50%;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xett1 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 7px;
+}
+.xett2 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 49.5%;
+  transform: rotate(90deg);
+  height: 6px;
+}
+.xett3 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 49.5%;
+  transform: rotate(120deg);
+  height: 3px;
+}
+.xett4 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 49.5%;
+  transform: rotate(150deg);
+  height: 3px;
+}
+.xett5 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 49.5%;
+  transform: rotate(210deg);
+  height: 3px;
+}
+.xett6 {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  top: 49.5%;
+  transform: rotate(240deg);
+  height: 3px;
+}
+.mid {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background-color: #d3c7c7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid > div:nth-of-type(12) {
+  font-size: 45px;
+  top: 0;
+  position: absolute;
+}
+.mid > div:nth-of-type(3) {
+  font-size: 45px;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(6) {
+  font-size: 45px;
+  bottom: 0;
+  position: absolute;
+}
+.mid > div:nth-of-type(9) {
+  font-size: 45px;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(1) {
+  font-size: 40px;
+  top: 10%;
+  right: 27%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(2) {
+  font-size: 40px;
+  top: 27%;
+  right: 10%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(4) {
+  font-size: 40px;
+  bottom: 20%;
+  right: 10%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(5) {
+  font-size: 40px;
+  bottom: 3%;
+  right: 27%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(7) {
+  font-size: 40px;
+  bottom: 3%;
+  left: 23%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(8) {
+  font-size: 40px;
+  bottom: 20%;
+  left: 8%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(10) {
+  font-size: 40px;
+  top: 28%;
+  left: 3%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.mid > div:nth-of-type(11) {
+  font-size: 40px;
+  top: 12%;
+  left: 20%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+.center {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 8px;
+  z-index: 0;
+}
+.second > div:nth-of-type(1) {
+  width: 50%;
+  height: 5px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 54%;
+}
+.second > div:nth-of-type(2) {
+  width: 50%;
+  height: 5px;
+  border-radius: 54%;
+} 
+.minute {
+  position: absolute;
+  width: 35%;
+  transform: translateX(-50%);
+  height: 6px;
+  border-radius: 50% 0 0 50%;
+  transform-origin: right;
+  background-color: #000000;
+}
+.hour {
+  position: absolute;
+  width: 35%;
+  transform: translateX(-50%);
+  height: 6px;
+  border-radius: 50% 0 0 50%;
+  transform-origin: right;
+  background-color: #000000;
+}  
+.weekday {
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  right: 10%;
+  padding: 2px 4px;
+}
+.time {
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10%;
+  font-size: 14px;
+  padding: 2px 4px;
+}
+    
