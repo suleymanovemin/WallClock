@@ -3,13 +3,6 @@ const timeLine = document.querySelector(".time");
 const secondLine = document.querySelector(".second");
 const minuteLine = document.querySelector(".minute");
 const hourLine = document.querySelector(".hour");
-
-
-
-
-
-
-
 const time = () => {
     let getday = new Date();
     let day = getday.getDay();
@@ -17,7 +10,6 @@ const time = () => {
     let minute = getday.getMinutes() < 10 ? "0" + getday.getMinutes() : getday.getMinutes();
     let second = getday.getSeconds() < 10 ? "0" + getday.getSeconds() : getday.getSeconds();
     timeLine.textContent = `${hour}:${minute}:${second}`;
-  
     switch (day) {
       case 1:
         weekday.textContent = "Monday";
@@ -43,7 +35,6 @@ const time = () => {
       default:
         break;
     }
-  
     let secondDegrees = ((second / 60) * 360) + 90; 
     console.log(secondDegrees);
     secondLine.style.transform = ` rotate(${secondDegrees}deg)` ; 
